@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2F11B32004396200AE416F /* XkeysHIDConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2F11B12004396200AE416F /* XkeysHIDConnection.h */; };
+		BE2F11B42004396200AE416F /* XkeysHIDConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F11B22004396200AE416F /* XkeysHIDConnection.m */; };
+		BE2F11B720043C6400AE416F /* XkeysUSBConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2F11B520043C6400AE416F /* XkeysUSBConnection.h */; };
+		BE2F11B820043C6400AE416F /* XkeysUSBConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2F11B620043C6400AE416F /* XkeysUSBConnection.m */; };
+		BE3DD13D2033B865000CCDBB /* Xkeys24Unit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3DD13B2033B865000CCDBB /* Xkeys24Unit.h */; };
+		BE3DD13E2033B865000CCDBB /* Xkeys24Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3DD13C2033B865000CCDBB /* Xkeys24Unit.m */; };
+		BE3DD14520379AF5000CCDBB /* XkeysBasicButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BE3DD14320379AF5000CCDBB /* XkeysBasicButton.h */; };
+		BE3DD14620379AF5000CCDBB /* XkeysBasicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3DD14420379AF5000CCDBB /* XkeysBasicButton.m */; };
+		BE42B8032051B1FA006F582F /* XkeysIndexedBitInput.h in Headers */ = {isa = PBXBuildFile; fileRef = BE42B8012051B1FA006F582F /* XkeysIndexedBitInput.h */; };
+		BE42B8042051B1FA006F582F /* XkeysIndexedBitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42B8022051B1FA006F582F /* XkeysIndexedBitInput.m */; };
+		BE42B80B205215E2006F582F /* XkeysOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BE42B809205215E2006F582F /* XkeysOutput.h */; };
+		BE42B80C205215E2006F582F /* XkeysOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42B80A205215E2006F582F /* XkeysOutput.m */; };
+		BE8BFDC81FA1240900C1BF34 /* XkeysKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8BFDBE1FA1240900C1BF34 /* XkeysKit.framework */; };
+		BE923B87204A117300A570A6 /* MockXK24.m in Sources */ = {isa = PBXBuildFile; fileRef = BE923B86204A117300A570A6 /* MockXK24.m */; };
+		BE923B89204A12B900A570A6 /* Xkeys24Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE923B88204A12B900A570A6 /* Xkeys24Tests.m */; };
+		BE96CD1520096E5A00B2FCEB /* Xkeys24.h in Headers */ = {isa = PBXBuildFile; fileRef = BE96CD1420096E5A00B2FCEB /* Xkeys24.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA100F11FB96E04005A93C0 /* XkeysIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100B11FB96E04005A93C0 /* XkeysIdentifiers.m */; };
+		BEA100F21FB96E04005A93C0 /* XkeysIdentifiers.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100B21FB96E04005A93C0 /* XkeysIdentifiers.h */; };
+		BEA100F31FB96E04005A93C0 /* Xkeys124TbarUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100B41FB96E04005A93C0 /* Xkeys124TbarUnit.h */; };
+		BEA100F51FB96E04005A93C0 /* XkeysUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100B61FB96E04005A93C0 /* XkeysUnit.m */; };
+		BEA100F61FB96E04005A93C0 /* XkeysUnitLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100B71FB96E04005A93C0 /* XkeysUnitLibrary.m */; };
+		BEA100F71FB96E04005A93C0 /* Xkeys124TbarUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100B81FB96E04005A93C0 /* Xkeys124TbarUnit.m */; };
+		BEA100F81FB96E04005A93C0 /* XkeysUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100B91FB96E04005A93C0 /* XkeysUnit.h */; };
+		BEA100FA1FB96E04005A93C0 /* XkeysUnitLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100BB1FB96E04005A93C0 /* XkeysUnitLibrary.h */; };
+		BEA100FB1FB96E04005A93C0 /* XkeysDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100BD1FB96E04005A93C0 /* XkeysDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA100FC1FB96E04005A93C0 /* Xkeys124Tbar.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100BE1FB96E04005A93C0 /* Xkeys124Tbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA100FD1FB96E04005A93C0 /* XkeysTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100BF1FB96E04005A93C0 /* XkeysTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA100FE1FB96E04005A93C0 /* XkeysKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100C01FB96E04005A93C0 /* XkeysKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA100FF1FB96E04005A93C0 /* XkeysLED.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100C11FB96E04005A93C0 /* XkeysLED.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA101001FB96E04005A93C0 /* XkeysServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100C21FB96E04005A93C0 /* XkeysServer.m */; };
+		BEA101011FB96E04005A93C0 /* XkeysControl.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100C31FB96E04005A93C0 /* XkeysControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA101021FB96E04005A93C0 /* XkeysBlueRedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100C41FB96E04005A93C0 /* XkeysBlueRedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA101031FB96E04005A93C0 /* XkeysServer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100C51FB96E04005A93C0 /* XkeysServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA101041FB96E04005A93C0 /* XkeysHIDMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100C71FB96E04005A93C0 /* XkeysHIDMonitor.m */; };
+		BEA101051FB96E04005A93C0 /* XkeysHIDSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100C81FB96E04005A93C0 /* XkeysHIDSystem.h */; };
+		BEA101071FB96E04005A93C0 /* XkeysMacHIDSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100CA1FB96E04005A93C0 /* XkeysMacHIDSystem.h */; };
+		BEA101081FB96E04005A93C0 /* XkeysHIDMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100CB1FB96E04005A93C0 /* XkeysHIDMonitor.h */; };
+		BEA1010A1FB96E04005A93C0 /* XkeysMacHIDSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100CD1FB96E04005A93C0 /* XkeysMacHIDSystem.m */; };
+		BEA1010B1FB96E04005A93C0 /* XkeysLEDOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100CF1FB96E04005A93C0 /* XkeysLEDOutput.h */; };
+		BEA1010C1FB96E04005A93C0 /* XkeysLEDOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100D01FB96E04005A93C0 /* XkeysLEDOutput.m */; };
+		BEA1010D1FB96E04005A93C0 /* XkeysBiColorButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100D21FB96E04005A93C0 /* XkeysBiColorButton.h */; };
+		BEA1010E1FB96E04005A93C0 /* XkeysInput.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100D31FB96E04005A93C0 /* XkeysInput.h */; };
+		BEA1010F1FB96E04005A93C0 /* XkeysSliderInput.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100D41FB96E04005A93C0 /* XkeysSliderInput.m */; };
+		BEA101101FB96E04005A93C0 /* XkeysBiColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100D51FB96E04005A93C0 /* XkeysBiColorButton.m */; };
+		BEA101111FB96E04005A93C0 /* XkeysInput.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100D61FB96E04005A93C0 /* XkeysInput.m */; };
+		BEA101121FB96E04005A93C0 /* XkeysSliderInput.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA100D71FB96E04005A93C0 /* XkeysSliderInput.h */; };
+		BEA1012A1FB96E77005A93C0 /* Xkeys124TbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100DA1FB96E04005A93C0 /* Xkeys124TbarTests.m */; };
+		BEA1012B1FB96E82005A93C0 /* MockHIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100DC1FB96E04005A93C0 /* MockHIDManager.m */; };
+		BEA1012C1FB96E82005A93C0 /* MockXkeysDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100DD1FB96E04005A93C0 /* MockXkeysDevice.m */; };
+		BEA1012D1FB96E82005A93C0 /* MockHIDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100DE1FB96E04005A93C0 /* MockHIDDevice.m */; };
+		BEA1012F1FB96E82005A93C0 /* MockXKE124Tbar.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100E01FB96E04005A93C0 /* MockXKE124Tbar.m */; };
+		BEA101361FB96E82005A93C0 /* MockHIDElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100E71FB96E04005A93C0 /* MockHIDElement.m */; };
+		BEA101371FB96E82005A93C0 /* MockHIDValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100E81FB96E04005A93C0 /* MockHIDValue.m */; };
+		BEA101381FB96E82005A93C0 /* MockHIDOutputReport.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100E91FB96E04005A93C0 /* MockHIDOutputReport.m */; };
+		BEA101391FB96E8B005A93C0 /* XkeysServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100EA1FB96E04005A93C0 /* XkeysServerTests.m */; };
+		BEA1013B1FB96E8B005A93C0 /* XkeysIdentifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA100EC1FB96E04005A93C0 /* XkeysIdentifierTests.m */; };
+		BEA1013F1FB96F72005A93C0 /* XkeysTestHIDSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1013D1FB96F71005A93C0 /* XkeysTestHIDSystem.m */; };
+		BECE335320572E4C00FCE62D /* XkeysButton.h in Headers */ = {isa = PBXBuildFile; fileRef = BECE335220572E4C00FCE62D /* XkeysButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE8BFDC91FA1240900C1BF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE8BFDB51FA1240900C1BF34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE8BFDBD1FA1240900C1BF34;
+			remoteInfo = XkeysFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE2F11B0200436A100AE416F /* XkeysConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XkeysConnection.h; sourceTree = "<group>"; };
+		BE2F11B12004396200AE416F /* XkeysHIDConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XkeysHIDConnection.h; sourceTree = "<group>"; };
+		BE2F11B22004396200AE416F /* XkeysHIDConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XkeysHIDConnection.m; sourceTree = "<group>"; };
+		BE2F11B520043C6400AE416F /* XkeysUSBConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XkeysUSBConnection.h; sourceTree = "<group>"; };
+		BE2F11B620043C6400AE416F /* XkeysUSBConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XkeysUSBConnection.m; sourceTree = "<group>"; };
+		BE3DD13B2033B865000CCDBB /* Xkeys24Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xkeys24Unit.h; sourceTree = "<group>"; };
+		BE3DD13C2033B865000CCDBB /* Xkeys24Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Xkeys24Unit.m; sourceTree = "<group>"; };
+		BE3DD14320379AF5000CCDBB /* XkeysBasicButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XkeysBasicButton.h; sourceTree = "<group>"; };
+		BE3DD14420379AF5000CCDBB /* XkeysBasicButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XkeysBasicButton.m; sourceTree = "<group>"; };
+		BE42B8012051B1FA006F582F /* XkeysIndexedBitInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XkeysIndexedBitInput.h; sourceTree = "<group>"; };
+		BE42B8022051B1FA006F582F /* XkeysIndexedBitInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XkeysIndexedBitInput.m; sourceTree = "<group>"; };
+		BE42B809205215E2006F582F /* XkeysOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XkeysOutput.h; sourceTree = "<group>"; };
+		BE42B80A205215E2006F582F /* XkeysOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XkeysOutput.m; sourceTree = "<group>"; };
+		BE8BFDBE1FA1240900C1BF34 /* XkeysKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XkeysKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8BFDC71FA1240900C1BF34 /* XkeysFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XkeysFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8BFDE01FA124D600C1BF34 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		BE923B85204A117300A570A6 /* MockXK24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockXK24.h; sourceTree = "<group>"; };
+		BE923B86204A117300A570A6 /* MockXK24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockXK24.m; sourceTree = "<group>"; };
+		BE923B88204A12B900A570A6 /* Xkeys24Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xkeys24Tests.m; sourceTree = "<group>"; };
+		BE96CD1420096E5A00B2FCEB /* Xkeys24.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xkeys24.h; sourceTree = "<group>"; };
+		BEA100B11FB96E04005A93C0 /* XkeysIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysIdentifiers.m; sourceTree = "<group>"; };
+		BEA100B21FB96E04005A93C0 /* XkeysIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysIdentifiers.h; sourceTree = "<group>"; };
+		BEA100B41FB96E04005A93C0 /* Xkeys124TbarUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xkeys124TbarUnit.h; sourceTree = "<group>"; };
+		BEA100B61FB96E04005A93C0 /* XkeysUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysUnit.m; sourceTree = "<group>"; };
+		BEA100B71FB96E04005A93C0 /* XkeysUnitLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysUnitLibrary.m; sourceTree = "<group>"; };
+		BEA100B81FB96E04005A93C0 /* Xkeys124TbarUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Xkeys124TbarUnit.m; sourceTree = "<group>"; };
+		BEA100B91FB96E04005A93C0 /* XkeysUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysUnit.h; sourceTree = "<group>"; };
+		BEA100BB1FB96E04005A93C0 /* XkeysUnitLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysUnitLibrary.h; sourceTree = "<group>"; };
+		BEA100BD1FB96E04005A93C0 /* XkeysDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysDevice.h; sourceTree = "<group>"; };
+		BEA100BE1FB96E04005A93C0 /* Xkeys124Tbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xkeys124Tbar.h; sourceTree = "<group>"; };
+		BEA100BF1FB96E04005A93C0 /* XkeysTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysTypes.h; sourceTree = "<group>"; };
+		BEA100C01FB96E04005A93C0 /* XkeysKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysKit.h; sourceTree = "<group>"; };
+		BEA100C11FB96E04005A93C0 /* XkeysLED.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysLED.h; sourceTree = "<group>"; };
+		BEA100C21FB96E04005A93C0 /* XkeysServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysServer.m; sourceTree = "<group>"; };
+		BEA100C31FB96E04005A93C0 /* XkeysControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysControl.h; sourceTree = "<group>"; };
+		BEA100C41FB96E04005A93C0 /* XkeysBlueRedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysBlueRedButton.h; sourceTree = "<group>"; };
+		BEA100C51FB96E04005A93C0 /* XkeysServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysServer.h; sourceTree = "<group>"; };
+		BEA100C71FB96E04005A93C0 /* XkeysHIDMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysHIDMonitor.m; sourceTree = "<group>"; };
+		BEA100C81FB96E04005A93C0 /* XkeysHIDSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysHIDSystem.h; sourceTree = "<group>"; };
+		BEA100CA1FB96E04005A93C0 /* XkeysMacHIDSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysMacHIDSystem.h; sourceTree = "<group>"; };
+		BEA100CB1FB96E04005A93C0 /* XkeysHIDMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysHIDMonitor.h; sourceTree = "<group>"; };
+		BEA100CD1FB96E04005A93C0 /* XkeysMacHIDSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysMacHIDSystem.m; sourceTree = "<group>"; };
+		BEA100CF1FB96E04005A93C0 /* XkeysLEDOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysLEDOutput.h; sourceTree = "<group>"; };
+		BEA100D01FB96E04005A93C0 /* XkeysLEDOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysLEDOutput.m; sourceTree = "<group>"; };
+		BEA100D21FB96E04005A93C0 /* XkeysBiColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysBiColorButton.h; sourceTree = "<group>"; };
+		BEA100D31FB96E04005A93C0 /* XkeysInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysInput.h; sourceTree = "<group>"; };
+		BEA100D41FB96E04005A93C0 /* XkeysSliderInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysSliderInput.m; sourceTree = "<group>"; };
+		BEA100D51FB96E04005A93C0 /* XkeysBiColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysBiColorButton.m; sourceTree = "<group>"; };
+		BEA100D61FB96E04005A93C0 /* XkeysInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysInput.m; sourceTree = "<group>"; };
+		BEA100D71FB96E04005A93C0 /* XkeysSliderInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysSliderInput.h; sourceTree = "<group>"; };
+		BEA100DA1FB96E04005A93C0 /* Xkeys124TbarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Xkeys124TbarTests.m; sourceTree = "<group>"; };
+		BEA100DC1FB96E04005A93C0 /* MockHIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockHIDManager.m; sourceTree = "<group>"; };
+		BEA100DD1FB96E04005A93C0 /* MockXkeysDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockXkeysDevice.m; sourceTree = "<group>"; };
+		BEA100DE1FB96E04005A93C0 /* MockHIDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockHIDDevice.m; sourceTree = "<group>"; };
+		BEA100DF1FB96E04005A93C0 /* MockHIDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockHIDElement.h; sourceTree = "<group>"; };
+		BEA100E01FB96E04005A93C0 /* MockXKE124Tbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockXKE124Tbar.m; sourceTree = "<group>"; };
+		BEA100E11FB96E04005A93C0 /* MockHIDOutputReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockHIDOutputReport.h; sourceTree = "<group>"; };
+		BEA100E21FB96E04005A93C0 /* MockHIDValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockHIDValue.h; sourceTree = "<group>"; };
+		BEA100E31FB96E04005A93C0 /* MockXkeysDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockXkeysDevice.h; sourceTree = "<group>"; };
+		BEA100E41FB96E04005A93C0 /* MockHIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockHIDManager.h; sourceTree = "<group>"; };
+		BEA100E51FB96E04005A93C0 /* MockHIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockHIDDevice.h; sourceTree = "<group>"; };
+		BEA100E61FB96E04005A93C0 /* MockXKE124Tbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockXKE124Tbar.h; sourceTree = "<group>"; };
+		BEA100E71FB96E04005A93C0 /* MockHIDElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockHIDElement.m; sourceTree = "<group>"; };
+		BEA100E81FB96E04005A93C0 /* MockHIDValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockHIDValue.m; sourceTree = "<group>"; };
+		BEA100E91FB96E04005A93C0 /* MockHIDOutputReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockHIDOutputReport.m; sourceTree = "<group>"; };
+		BEA100EA1FB96E04005A93C0 /* XkeysServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysServerTests.m; sourceTree = "<group>"; };
+		BEA100EB1FB96E04005A93C0 /* XkeysServer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XkeysServer+Private.h"; sourceTree = "<group>"; };
+		BEA100EC1FB96E04005A93C0 /* XkeysIdentifierTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysIdentifierTests.m; sourceTree = "<group>"; };
+		BEA100ED1FB96E04005A93C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA100F01FB96E04005A93C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA1013D1FB96F71005A93C0 /* XkeysTestHIDSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysTestHIDSystem.m; sourceTree = "<group>"; };
+		BEA1013E1FB96F71005A93C0 /* XkeysTestHIDSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysTestHIDSystem.h; sourceTree = "<group>"; };
+		BEB9158B2049422000380C8E /* XkeysFrameworkDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XkeysFrameworkDebug.xcconfig; sourceTree = "<group>"; };
+		BECE335220572E4C00FCE62D /* XkeysButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XkeysButton.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE8BFDBA1FA1240900C1BF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8BFDC41FA1240900C1BF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8BFDC81FA1240900C1BF34 /* XkeysKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE8BFDB41FA1240900C1BF34 = {
+			isa = PBXGroup;
+			children = (
+				BEB9158A2049420600380C8E /* Configurations */,
+				BEA100AF1FB96E04005A93C0 /* Source */,
+				BEA100EF1FB96E04005A93C0 /* Resources */,
+				BEA100D81FB96E04005A93C0 /* Tests */,
+				BE8BFDDF1FA124D600C1BF34 /* Frameworks */,
+				BE8BFDBF1FA1240900C1BF34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE8BFDBF1FA1240900C1BF34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE8BFDBE1FA1240900C1BF34 /* XkeysKit.framework */,
+				BE8BFDC71FA1240900C1BF34 /* XkeysFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE8BFDDF1FA124D600C1BF34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8BFDE01FA124D600C1BF34 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA100AF1FB96E04005A93C0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100BC1FB96E04005A93C0 /* Public */,
+				BEA100B01FB96E04005A93C0 /* Internal */,
+				BEA100B31FB96E04005A93C0 /* XkeysUnits */,
+				BEA100C61FB96E04005A93C0 /* HIDManager */,
+				BEA100CE1FB96E04005A93C0 /* XkeysOutput */,
+				BEA100D11FB96E04005A93C0 /* XkeysInput */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BEA100B01FB96E04005A93C0 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100B21FB96E04005A93C0 /* XkeysIdentifiers.h */,
+				BEA100B11FB96E04005A93C0 /* XkeysIdentifiers.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		BEA100B31FB96E04005A93C0 /* XkeysUnits */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100BB1FB96E04005A93C0 /* XkeysUnitLibrary.h */,
+				BEA100B71FB96E04005A93C0 /* XkeysUnitLibrary.m */,
+				BEA100B91FB96E04005A93C0 /* XkeysUnit.h */,
+				BEA100B61FB96E04005A93C0 /* XkeysUnit.m */,
+				BE3DD13B2033B865000CCDBB /* Xkeys24Unit.h */,
+				BE3DD13C2033B865000CCDBB /* Xkeys24Unit.m */,
+				BEA100B41FB96E04005A93C0 /* Xkeys124TbarUnit.h */,
+				BEA100B81FB96E04005A93C0 /* Xkeys124TbarUnit.m */,
+			);
+			path = XkeysUnits;
+			sourceTree = "<group>";
+		};
+		BEA100BC1FB96E04005A93C0 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100C41FB96E04005A93C0 /* XkeysBlueRedButton.h */,
+				BECE335220572E4C00FCE62D /* XkeysButton.h */,
+				BEA100C31FB96E04005A93C0 /* XkeysControl.h */,
+				BEA100BD1FB96E04005A93C0 /* XkeysDevice.h */,
+				BEA100C01FB96E04005A93C0 /* XkeysKit.h */,
+				BEA100C11FB96E04005A93C0 /* XkeysLED.h */,
+				BEA100C51FB96E04005A93C0 /* XkeysServer.h */,
+				BEA100C21FB96E04005A93C0 /* XkeysServer.m */,
+				BEA100BF1FB96E04005A93C0 /* XkeysTypes.h */,
+				BE96CD1420096E5A00B2FCEB /* Xkeys24.h */,
+				BEA100BE1FB96E04005A93C0 /* Xkeys124Tbar.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BEA100C61FB96E04005A93C0 /* HIDManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100CB1FB96E04005A93C0 /* XkeysHIDMonitor.h */,
+				BEA100C71FB96E04005A93C0 /* XkeysHIDMonitor.m */,
+				BEA100C81FB96E04005A93C0 /* XkeysHIDSystem.h */,
+				BEA100CA1FB96E04005A93C0 /* XkeysMacHIDSystem.h */,
+				BEA100CD1FB96E04005A93C0 /* XkeysMacHIDSystem.m */,
+				BE2F11B0200436A100AE416F /* XkeysConnection.h */,
+				BE2F11B12004396200AE416F /* XkeysHIDConnection.h */,
+				BE2F11B22004396200AE416F /* XkeysHIDConnection.m */,
+				BE2F11B520043C6400AE416F /* XkeysUSBConnection.h */,
+				BE2F11B620043C6400AE416F /* XkeysUSBConnection.m */,
+			);
+			path = HIDManager;
+			sourceTree = "<group>";
+		};
+		BEA100CE1FB96E04005A93C0 /* XkeysOutput */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100CF1FB96E04005A93C0 /* XkeysLEDOutput.h */,
+				BEA100D01FB96E04005A93C0 /* XkeysLEDOutput.m */,
+				BE42B809205215E2006F582F /* XkeysOutput.h */,
+				BE42B80A205215E2006F582F /* XkeysOutput.m */,
+			);
+			path = XkeysOutput;
+			sourceTree = "<group>";
+		};
+		BEA100D11FB96E04005A93C0 /* XkeysInput */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100D21FB96E04005A93C0 /* XkeysBiColorButton.h */,
+				BEA100D51FB96E04005A93C0 /* XkeysBiColorButton.m */,
+				BE3DD14320379AF5000CCDBB /* XkeysBasicButton.h */,
+				BE3DD14420379AF5000CCDBB /* XkeysBasicButton.m */,
+				BE42B8012051B1FA006F582F /* XkeysIndexedBitInput.h */,
+				BE42B8022051B1FA006F582F /* XkeysIndexedBitInput.m */,
+				BEA100D31FB96E04005A93C0 /* XkeysInput.h */,
+				BEA100D61FB96E04005A93C0 /* XkeysInput.m */,
+				BEA100D71FB96E04005A93C0 /* XkeysSliderInput.h */,
+				BEA100D41FB96E04005A93C0 /* XkeysSliderInput.m */,
+			);
+			path = XkeysInput;
+			sourceTree = "<group>";
+		};
+		BEA100D81FB96E04005A93C0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100EB1FB96E04005A93C0 /* XkeysServer+Private.h */,
+				BEA100EC1FB96E04005A93C0 /* XkeysIdentifierTests.m */,
+				BEA100EA1FB96E04005A93C0 /* XkeysServerTests.m */,
+				BE923B88204A12B900A570A6 /* Xkeys24Tests.m */,
+				BEA100DA1FB96E04005A93C0 /* Xkeys124TbarTests.m */,
+				BEA100DB1FB96E04005A93C0 /* MockObjects */,
+				BEA100ED1FB96E04005A93C0 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BEA100DB1FB96E04005A93C0 /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				BEA1013E1FB96F71005A93C0 /* XkeysTestHIDSystem.h */,
+				BEA1013D1FB96F71005A93C0 /* XkeysTestHIDSystem.m */,
+				BEA100E41FB96E04005A93C0 /* MockHIDManager.h */,
+				BEA100DC1FB96E04005A93C0 /* MockHIDManager.m */,
+				BEA100E51FB96E04005A93C0 /* MockHIDDevice.h */,
+				BEA100DE1FB96E04005A93C0 /* MockHIDDevice.m */,
+				BEA100E31FB96E04005A93C0 /* MockXkeysDevice.h */,
+				BEA100DD1FB96E04005A93C0 /* MockXkeysDevice.m */,
+				BE923B85204A117300A570A6 /* MockXK24.h */,
+				BE923B86204A117300A570A6 /* MockXK24.m */,
+				BEA100E61FB96E04005A93C0 /* MockXKE124Tbar.h */,
+				BEA100E01FB96E04005A93C0 /* MockXKE124Tbar.m */,
+				BEA100DF1FB96E04005A93C0 /* MockHIDElement.h */,
+				BEA100E71FB96E04005A93C0 /* MockHIDElement.m */,
+				BEA100E11FB96E04005A93C0 /* MockHIDOutputReport.h */,
+				BEA100E91FB96E04005A93C0 /* MockHIDOutputReport.m */,
+				BEA100E21FB96E04005A93C0 /* MockHIDValue.h */,
+				BEA100E81FB96E04005A93C0 /* MockHIDValue.m */,
+			);
+			path = MockObjects;
+			sourceTree = "<group>";
+		};
+		BEA100EF1FB96E04005A93C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEA100F01FB96E04005A93C0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEB9158A2049420600380C8E /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BEB9158B2049422000380C8E /* XkeysFrameworkDebug.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BE8BFDBB1FA1240900C1BF34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA100F31FB96E04005A93C0 /* Xkeys124TbarUnit.h in Headers */,
+				BEA101021FB96E04005A93C0 /* XkeysBlueRedButton.h in Headers */,
+				BEA101031FB96E04005A93C0 /* XkeysServer.h in Headers */,
+				BEA100F81FB96E04005A93C0 /* XkeysUnit.h in Headers */,
+				BE42B8032051B1FA006F582F /* XkeysIndexedBitInput.h in Headers */,
+				BECE335320572E4C00FCE62D /* XkeysButton.h in Headers */,
+				BEA101081FB96E04005A93C0 /* XkeysHIDMonitor.h in Headers */,
+				BE3DD13D2033B865000CCDBB /* Xkeys24Unit.h in Headers */,
+				BEA101051FB96E04005A93C0 /* XkeysHIDSystem.h in Headers */,
+				BEA1010D1FB96E04005A93C0 /* XkeysBiColorButton.h in Headers */,
+				BEA100FF1FB96E04005A93C0 /* XkeysLED.h in Headers */,
+				BE96CD1520096E5A00B2FCEB /* Xkeys24.h in Headers */,
+				BEA101011FB96E04005A93C0 /* XkeysControl.h in Headers */,
+				BEA101121FB96E04005A93C0 /* XkeysSliderInput.h in Headers */,
+				BEA101071FB96E04005A93C0 /* XkeysMacHIDSystem.h in Headers */,
+				BEA100FD1FB96E04005A93C0 /* XkeysTypes.h in Headers */,
+				BE2F11B720043C6400AE416F /* XkeysUSBConnection.h in Headers */,
+				BEA100FC1FB96E04005A93C0 /* Xkeys124Tbar.h in Headers */,
+				BEA1010B1FB96E04005A93C0 /* XkeysLEDOutput.h in Headers */,
+				BE42B80B205215E2006F582F /* XkeysOutput.h in Headers */,
+				BE3DD14520379AF5000CCDBB /* XkeysBasicButton.h in Headers */,
+				BEA1010E1FB96E04005A93C0 /* XkeysInput.h in Headers */,
+				BEA100FA1FB96E04005A93C0 /* XkeysUnitLibrary.h in Headers */,
+				BEA100F21FB96E04005A93C0 /* XkeysIdentifiers.h in Headers */,
+				BE2F11B32004396200AE416F /* XkeysHIDConnection.h in Headers */,
+				BEA100FE1FB96E04005A93C0 /* XkeysKit.h in Headers */,
+				BEA100FB1FB96E04005A93C0 /* XkeysDevice.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BE8BFDBD1FA1240900C1BF34 /* XkeysFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8BFDD21FA1240900C1BF34 /* Build configuration list for PBXNativeTarget "XkeysFramework" */;
+			buildPhases = (
+				BE8BFDB91FA1240900C1BF34 /* Sources */,
+				BE8BFDBA1FA1240900C1BF34 /* Frameworks */,
+				BE8BFDBB1FA1240900C1BF34 /* Headers */,
+				BE8BFDBC1FA1240900C1BF34 /* Resources */,
+				BEA101791FB992F3005A93C0 /* Run Script - genstrings */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XkeysFramework;
+			productName = XkeysFramework;
+			productReference = BE8BFDBE1FA1240900C1BF34 /* XkeysKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE8BFDC61FA1240900C1BF34 /* XkeysFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8BFDD51FA1240900C1BF34 /* Build configuration list for PBXNativeTarget "XkeysFrameworkTests" */;
+			buildPhases = (
+				BE8BFDC31FA1240900C1BF34 /* Sources */,
+				BE8BFDC41FA1240900C1BF34 /* Frameworks */,
+				BE8BFDC51FA1240900C1BF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE8BFDCA1FA1240900C1BF34 /* PBXTargetDependency */,
+			);
+			name = XkeysFrameworkTests;
+			productName = XkeysFrameworkTests;
+			productReference = BE8BFDC71FA1240900C1BF34 /* XkeysFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE8BFDB51FA1240900C1BF34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "P.I. Engineering";
+				TargetAttributes = {
+					BE8BFDBD1FA1240900C1BF34 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					BE8BFDC61FA1240900C1BF34 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BE8BFDB81FA1240900C1BF34 /* Build configuration list for PBXProject "XkeysFramework" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE8BFDB41FA1240900C1BF34;
+			productRefGroup = BE8BFDBF1FA1240900C1BF34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE8BFDBD1FA1240900C1BF34 /* XkeysFramework */,
+				BE8BFDC61FA1240900C1BF34 /* XkeysFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE8BFDBC1FA1240900C1BF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8BFDC51FA1240900C1BF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEA101791FB992F3005A93C0 /* Run Script - genstrings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Source/XkeysUnits/Xkeys124TbarUnit.m",
+				"$(SRCROOT)/Source/XkeysOutput/XkeysLEDOutput.m",
+				"$(SRCROOT)/Source/XkeysUnits/Xkeys24Unit.m",
+				"$(SRCROOT)/Source/XkeysInput/XkeysButton.m",
+			);
+			name = "Run Script - genstrings";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OUTPUT_LOCATION=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/Base.lproj\"\n\n# Create the folder for the localizable strings file if necessary\nif [ ! -d \"$OUTPUT_LOCATION\" ]; then\n    mkdir \"$OUTPUT_LOCATION\"\nfi\n\n# Generate the new strings file\ngenstrings -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysUnits/Xkeys124TbarUnit.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysUnits/Xkeys24Unit.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysUnits/XkeysHD15Unit.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysOutput/XkeysLEDOutput.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysInput/XkeysButton.m\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE8BFDB91FA1240900C1BF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA100F51FB96E04005A93C0 /* XkeysUnit.m in Sources */,
+				BEA1010C1FB96E04005A93C0 /* XkeysLEDOutput.m in Sources */,
+				BEA1010A1FB96E04005A93C0 /* XkeysMacHIDSystem.m in Sources */,
+				BEA100F71FB96E04005A93C0 /* Xkeys124TbarUnit.m in Sources */,
+				BEA101111FB96E04005A93C0 /* XkeysInput.m in Sources */,
+				BEA100F61FB96E04005A93C0 /* XkeysUnitLibrary.m in Sources */,
+				BEA101101FB96E04005A93C0 /* XkeysBiColorButton.m in Sources */,
+				BE3DD14620379AF5000CCDBB /* XkeysBasicButton.m in Sources */,
+				BEA101001FB96E04005A93C0 /* XkeysServer.m in Sources */,
+				BEA100F11FB96E04005A93C0 /* XkeysIdentifiers.m in Sources */,
+				BE2F11B42004396200AE416F /* XkeysHIDConnection.m in Sources */,
+				BE42B8042051B1FA006F582F /* XkeysIndexedBitInput.m in Sources */,
+				BE42B80C205215E2006F582F /* XkeysOutput.m in Sources */,
+				BE2F11B820043C6400AE416F /* XkeysUSBConnection.m in Sources */,
+				BEA101041FB96E04005A93C0 /* XkeysHIDMonitor.m in Sources */,
+				BEA1010F1FB96E04005A93C0 /* XkeysSliderInput.m in Sources */,
+				BE3DD13E2033B865000CCDBB /* Xkeys24Unit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8BFDC31FA1240900C1BF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA101391FB96E8B005A93C0 /* XkeysServerTests.m in Sources */,
+				BEA1013B1FB96E8B005A93C0 /* XkeysIdentifierTests.m in Sources */,
+				BEA1012B1FB96E82005A93C0 /* MockHIDManager.m in Sources */,
+				BEA1012C1FB96E82005A93C0 /* MockXkeysDevice.m in Sources */,
+				BE923B87204A117300A570A6 /* MockXK24.m in Sources */,
+				BEA1013F1FB96F72005A93C0 /* XkeysTestHIDSystem.m in Sources */,
+				BEA1012D1FB96E82005A93C0 /* MockHIDDevice.m in Sources */,
+				BEA1012F1FB96E82005A93C0 /* MockXKE124Tbar.m in Sources */,
+				BE923B89204A12B900A570A6 /* Xkeys24Tests.m in Sources */,
+				BEA101361FB96E82005A93C0 /* MockHIDElement.m in Sources */,
+				BEA101371FB96E82005A93C0 /* MockHIDValue.m in Sources */,
+				BEA101381FB96E82005A93C0 /* MockHIDOutputReport.m in Sources */,
+				BEA1012A1FB96E77005A93C0 /* Xkeys124TbarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE8BFDCA1FA1240900C1BF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE8BFDBD1FA1240900C1BF34 /* XkeysFramework */;
+			targetProxy = BE8BFDC91FA1240900C1BF34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE8BFDD01FA1240900C1BF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE8BFDD11FA1240900C1BF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE8BFDD31FA1240900C1BF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB9158B2049422000380C8E /* XkeysFrameworkDebug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkeys.XkeysKit;
+				PRODUCT_NAME = XkeysKit;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BE8BFDD41FA1240900C1BF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkeys.XkeysKit;
+				PRODUCT_NAME = XkeysKit;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BE8BFDD61FA1240900C1BF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkeys.XkeysFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE8BFDD71FA1240900C1BF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkeys.XkeysFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE8BFDB81FA1240900C1BF34 /* Build configuration list for PBXProject "XkeysFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8BFDD01FA1240900C1BF34 /* Debug */,
+				BE8BFDD11FA1240900C1BF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8BFDD21FA1240900C1BF34 /* Build configuration list for PBXNativeTarget "XkeysFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8BFDD31FA1240900C1BF34 /* Debug */,
+				BE8BFDD41FA1240900C1BF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8BFDD51FA1240900C1BF34 /* Build configuration list for PBXNativeTarget "XkeysFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8BFDD61FA1240900C1BF34 /* Debug */,
+				BE8BFDD71FA1240900C1BF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE8BFDB51FA1240900C1BF34 /* Project object */;
+}

@@ -1,0 +1,9 @@
+//
+//  XkeysFrameworkDebug.xcconfig
+//  XkeysFramework
+//
+//  Created by Ken Heglund on 3/2/18.
+//  Copyright © 2018 P.I. Engineering. All rights reserved.
+//
+
+OTHER_CFLAGS="-DPRINT_DEVICE_DESCRIPTIONS=1"

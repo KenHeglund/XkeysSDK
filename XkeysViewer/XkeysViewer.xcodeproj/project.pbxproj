@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE8BFDE51FA125C500C1BF34 /* XkeysKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8BFDE61FA125C500C1BF34 /* XkeysKit.framework */; };
+		BE8BFDE71FA125CF00C1BF34 /* XkeysKit.framework in Copy Files - Frameworks */ = {isa = PBXBuildFile; fileRef = BE8BFDE61FA125C500C1BF34 /* XkeysKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE96CD1120096D0E00B2FCEB /* XK24State.m in Sources */ = {isa = PBXBuildFile; fileRef = BE96CD0C20096D0E00B2FCEB /* XK24State.m */; };
+		BE96CD1220096D0E00B2FCEB /* XK24ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE96CD0F20096D0E00B2FCEB /* XK24ViewController.m */; };
+		BE96CD1320096D0E00B2FCEB /* XK24View.m in Sources */ = {isa = PBXBuildFile; fileRef = BE96CD1020096D0E00B2FCEB /* XK24View.m */; };
+		BE96CD1B2009734400B2FCEB /* XK24View.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE96CD192009734400B2FCEB /* XK24View.xib */; };
+		BEA101671FB96FDD005A93C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA101411FB96FDD005A93C0 /* Main.storyboard */; };
+		BEA101681FB96FDD005A93C0 /* XKE124TbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA101431FB96FDD005A93C0 /* XKE124TbarView.xib */; };
+		BEA1016A1FB96FDD005A93C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA101461FB96FDD005A93C0 /* Assets.xcassets */; };
+		BEA1016B1FB96FDD005A93C0 /* XkeysRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA101481FB96FDD005A93C0 /* XkeysRootViewController.m */; };
+		BEA1016E1FB96FDD005A93C0 /* XkeysDeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1014F1FB96FDD005A93C0 /* XkeysDeviceView.m */; };
+		BEA1016F1FB96FDD005A93C0 /* XkeysState.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA101501FB96FDD005A93C0 /* XkeysState.m */; };
+		BEA101701FB96FDD005A93C0 /* XkeysDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA101531FB96FDD005A93C0 /* XkeysDeviceViewController.m */; };
+		BEA101711FB96FDD005A93C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA101561FB96FDD005A93C0 /* AppDelegate.m */; };
+		BEA101721FB96FDD005A93C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA101581FB96FDD005A93C0 /* main.m */; };
+		BEA101731FB96FDD005A93C0 /* XKE124TBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1015B1FB96FDD005A93C0 /* XKE124TBarView.m */; };
+		BEA101741FB96FDD005A93C0 /* XKE124TBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1015D1FB96FDD005A93C0 /* XKE124TBarViewController.m */; };
+		BEA101751FB96FDD005A93C0 /* XKE124TBarState.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1015E1FB96FDD005A93C0 /* XKE124TBarState.m */; };
+		BEA101761FB96FDD005A93C0 /* XKE124TBarHWModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA101611FB96FDD005A93C0 /* XKE124TBarHWModeViewController.m */; };
+		BEA101771FB96FDD005A93C0 /* XkeysServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA101631FB96FDD005A93C0 /* XkeysServerController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE25E2161FA11B4E00C912AA /* Copy Files - Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE8BFDE71FA125CF00C1BF34 /* XkeysKit.framework in Copy Files - Frameworks */,
+			);
+			name = "Copy Files - Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE8BFDE61FA125C500C1BF34 /* XkeysKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XkeysKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE96CD0B20096D0E00B2FCEB /* XK24ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XK24ViewController.h; sourceTree = "<group>"; };
+		BE96CD0C20096D0E00B2FCEB /* XK24State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XK24State.m; sourceTree = "<group>"; };
+		BE96CD0D20096D0E00B2FCEB /* XK24View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XK24View.h; sourceTree = "<group>"; };
+		BE96CD0E20096D0E00B2FCEB /* XK24State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XK24State.h; sourceTree = "<group>"; };
+		BE96CD0F20096D0E00B2FCEB /* XK24ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XK24ViewController.m; sourceTree = "<group>"; };
+		BE96CD1020096D0E00B2FCEB /* XK24View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XK24View.m; sourceTree = "<group>"; };
+		BE96CD1A2009734400B2FCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/XK24View.xib; sourceTree = "<group>"; };
+		BEA101421FB96FDD005A93C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEA101441FB96FDD005A93C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/XKE124TbarView.xib; sourceTree = "<group>"; };
+		BEA101451FB96FDD005A93C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA101461FB96FDD005A93C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEA101481FB96FDD005A93C0 /* XkeysRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysRootViewController.m; sourceTree = "<group>"; };
+		BEA1014F1FB96FDD005A93C0 /* XkeysDeviceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysDeviceView.m; sourceTree = "<group>"; };
+		BEA101501FB96FDD005A93C0 /* XkeysState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysState.m; sourceTree = "<group>"; };
+		BEA101511FB96FDD005A93C0 /* XkeysDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysDeviceViewController.h; sourceTree = "<group>"; };
+		BEA101521FB96FDD005A93C0 /* XkeysDeviceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysDeviceView.h; sourceTree = "<group>"; };
+		BEA101531FB96FDD005A93C0 /* XkeysDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysDeviceViewController.m; sourceTree = "<group>"; };
+		BEA101541FB96FDD005A93C0 /* XkeysState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysState.h; sourceTree = "<group>"; };
+		BEA101551FB96FDD005A93C0 /* XkeysServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysServerController.h; sourceTree = "<group>"; };
+		BEA101561FB96FDD005A93C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEA101571FB96FDD005A93C0 /* XkeysRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XkeysRootViewController.h; sourceTree = "<group>"; };
+		BEA101581FB96FDD005A93C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEA101591FB96FDD005A93C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEA1015B1FB96FDD005A93C0 /* XKE124TBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKE124TBarView.m; sourceTree = "<group>"; };
+		BEA1015C1FB96FDD005A93C0 /* XKE124TBarHWModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKE124TBarHWModeViewController.h; sourceTree = "<group>"; };
+		BEA1015D1FB96FDD005A93C0 /* XKE124TBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKE124TBarViewController.m; sourceTree = "<group>"; };
+		BEA1015E1FB96FDD005A93C0 /* XKE124TBarState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKE124TBarState.m; sourceTree = "<group>"; };
+		BEA1015F1FB96FDD005A93C0 /* XKE124TBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKE124TBarView.h; sourceTree = "<group>"; };
+		BEA101601FB96FDD005A93C0 /* XKE124TBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKE124TBarViewController.h; sourceTree = "<group>"; };
+		BEA101611FB96FDD005A93C0 /* XKE124TBarHWModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKE124TBarHWModeViewController.m; sourceTree = "<group>"; };
+		BEA101621FB96FDD005A93C0 /* XKE124TBarState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKE124TBarState.h; sourceTree = "<group>"; };
+		BEA101631FB96FDD005A93C0 /* XkeysServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XkeysServerController.m; sourceTree = "<group>"; };
+		BEB9158820493FF800380C8E /* XkeysViewerDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XkeysViewerDebug.xcconfig; sourceTree = "<group>"; };
+		BEC3CB041F7F098E00718C9C /* XkeysViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XkeysViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEC3CB011F7F098E00718C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8BFDE51FA125C500C1BF34 /* XkeysKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE25E2131FA11B4500C912AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8BFDE61FA125C500C1BF34 /* XkeysKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE96CD0A20096D0E00B2FCEB /* XK24 */ = {
+			isa = PBXGroup;
+			children = (
+				BE96CD0B20096D0E00B2FCEB /* XK24ViewController.h */,
+				BE96CD0F20096D0E00B2FCEB /* XK24ViewController.m */,
+				BE96CD0E20096D0E00B2FCEB /* XK24State.h */,
+				BE96CD0C20096D0E00B2FCEB /* XK24State.m */,
+				BE96CD0D20096D0E00B2FCEB /* XK24View.h */,
+				BE96CD1020096D0E00B2FCEB /* XK24View.m */,
+			);
+			path = XK24;
+			sourceTree = "<group>";
+		};
+		BEA101401FB96FDD005A93C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEA101411FB96FDD005A93C0 /* Main.storyboard */,
+				BE96CD192009734400B2FCEB /* XK24View.xib */,
+				BEA101431FB96FDD005A93C0 /* XKE124TbarView.xib */,
+				BEA101451FB96FDD005A93C0 /* Info.plist */,
+				BEA101461FB96FDD005A93C0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEA101471FB96FDD005A93C0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BEA101581FB96FDD005A93C0 /* main.m */,
+				BEA101591FB96FDD005A93C0 /* AppDelegate.h */,
+				BEA101561FB96FDD005A93C0 /* AppDelegate.m */,
+				BEA101551FB96FDD005A93C0 /* XkeysServerController.h */,
+				BEA101631FB96FDD005A93C0 /* XkeysServerController.m */,
+				BEA101571FB96FDD005A93C0 /* XkeysRootViewController.h */,
+				BEA101481FB96FDD005A93C0 /* XkeysRootViewController.m */,
+				BEA1014E1FB96FDD005A93C0 /* XkeysCommon */,
+				BE96CD0A20096D0E00B2FCEB /* XK24 */,
+				BEA1015A1FB96FDD005A93C0 /* XKE124TBar */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BEA1014E1FB96FDD005A93C0 /* XkeysCommon */ = {
+			isa = PBXGroup;
+			children = (
+				BEA101511FB96FDD005A93C0 /* XkeysDeviceViewController.h */,
+				BEA101531FB96FDD005A93C0 /* XkeysDeviceViewController.m */,
+				BEA101541FB96FDD005A93C0 /* XkeysState.h */,
+				BEA101501FB96FDD005A93C0 /* XkeysState.m */,
+				BEA101521FB96FDD005A93C0 /* XkeysDeviceView.h */,
+				BEA1014F1FB96FDD005A93C0 /* XkeysDeviceView.m */,
+			);
+			path = XkeysCommon;
+			sourceTree = "<group>";
+		};
+		BEA1015A1FB96FDD005A93C0 /* XKE124TBar */ = {
+			isa = PBXGroup;
+			children = (
+				BEA101601FB96FDD005A93C0 /* XKE124TBarViewController.h */,
+				BEA1015D1FB96FDD005A93C0 /* XKE124TBarViewController.m */,
+				BEA1015C1FB96FDD005A93C0 /* XKE124TBarHWModeViewController.h */,
+				BEA101611FB96FDD005A93C0 /* XKE124TBarHWModeViewController.m */,
+				BEA101621FB96FDD005A93C0 /* XKE124TBarState.h */,
+				BEA1015E1FB96FDD005A93C0 /* XKE124TBarState.m */,
+				BEA1015F1FB96FDD005A93C0 /* XKE124TBarView.h */,
+				BEA1015B1FB96FDD005A93C0 /* XKE124TBarView.m */,
+			);
+			path = XKE124TBar;
+			sourceTree = "<group>";
+		};
+		BEB9158720493FC600380C8E /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BEB9158820493FF800380C8E /* XkeysViewerDebug.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		BEC3CAFB1F7F098E00718C9C = {
+			isa = PBXGroup;
+			children = (
+				BEB9158720493FC600380C8E /* Configurations */,
+				BEA101471FB96FDD005A93C0 /* Source */,
+				BEA101401FB96FDD005A93C0 /* Resources */,
+				BE25E2131FA11B4500C912AA /* Frameworks */,
+				BEC3CB051F7F098E00718C9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEC3CB051F7F098E00718C9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEC3CB041F7F098E00718C9C /* XkeysViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEC3CB031F7F098E00718C9C /* XkeysViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC3CB181F7F098E00718C9C /* Build configuration list for PBXNativeTarget "XkeysViewer" */;
+			buildPhases = (
+				BEC3CB001F7F098E00718C9C /* Sources */,
+				BEC3CB011F7F098E00718C9C /* Frameworks */,
+				BEC3CB021F7F098E00718C9C /* Resources */,
+				BE25E2161FA11B4E00C912AA /* Copy Files - Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XkeysViewer;
+			productName = XkeysViewer;
+			productReference = BEC3CB041F7F098E00718C9C /* XkeysViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEC3CAFC1F7F098E00718C9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ken Heglund";
+				TargetAttributes = {
+					BEC3CB031F7F098E00718C9C = {
+						CreatedOnToolsVersion = 8.3.2;
+					};
+				};
+			};
+			buildConfigurationList = BEC3CAFF1F7F098E00718C9C /* Build configuration list for PBXProject "XkeysViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEC3CAFB1F7F098E00718C9C;
+			productRefGroup = BEC3CB051F7F098E00718C9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEC3CB031F7F098E00718C9C /* XkeysViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEC3CB021F7F098E00718C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA101681FB96FDD005A93C0 /* XKE124TbarView.xib in Resources */,
+				BEA101671FB96FDD005A93C0 /* Main.storyboard in Resources */,
+				BEA1016A1FB96FDD005A93C0 /* Assets.xcassets in Resources */,
+				BE96CD1B2009734400B2FCEB /* XK24View.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEC3CB001F7F098E00718C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE96CD1220096D0E00B2FCEB /* XK24ViewController.m in Sources */,
+				BEA101731FB96FDD005A93C0 /* XKE124TBarView.m in Sources */,
+				BEA1016B1FB96FDD005A93C0 /* XkeysRootViewController.m in Sources */,
+				BEA101701FB96FDD005A93C0 /* XkeysDeviceViewController.m in Sources */,
+				BEA1016F1FB96FDD005A93C0 /* XkeysState.m in Sources */,
+				BEA101741FB96FDD005A93C0 /* XKE124TBarViewController.m in Sources */,
+				BE96CD1120096D0E00B2FCEB /* XK24State.m in Sources */,
+				BEA1016E1FB96FDD005A93C0 /* XkeysDeviceView.m in Sources */,
+				BEA101761FB96FDD005A93C0 /* XKE124TBarHWModeViewController.m in Sources */,
+				BEA101751FB96FDD005A93C0 /* XKE124TBarState.m in Sources */,
+				BEA101771FB96FDD005A93C0 /* XkeysServerController.m in Sources */,
+				BEA101721FB96FDD005A93C0 /* main.m in Sources */,
+				BE96CD1320096D0E00B2FCEB /* XK24View.m in Sources */,
+				BEA101711FB96FDD005A93C0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE96CD192009734400B2FCEB /* XK24View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE96CD1A2009734400B2FCEB /* Base */,
+			);
+			name = XK24View.xib;
+			sourceTree = "<group>";
+		};
+		BEA101411FB96FDD005A93C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA101421FB96FDD005A93C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEA101431FB96FDD005A93C0 /* XKE124TbarView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA101441FB96FDD005A93C0 /* Base */,
+			);
+			name = XKE124TbarView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEC3CB161F7F098E00718C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEC3CB171F7F098E00718C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BEC3CB191F7F098E00718C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB9158820493FF800380C8E /* XkeysViewerDebug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)";
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkeys.XkeysViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEC3CB1A1F7F098E00718C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILD_DIR)";
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkeys.XkeysViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEC3CAFF1F7F098E00718C9C /* Build configuration list for PBXProject "XkeysViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC3CB161F7F098E00718C9C /* Debug */,
+				BEC3CB171F7F098E00718C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC3CB181F7F098E00718C9C /* Build configuration list for PBXNativeTarget "XkeysViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC3CB191F7F098E00718C9C /* Debug */,
+				BEC3CB1A1F7F098E00718C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEC3CAFC1F7F098E00718C9C /* Project object */;
+}
