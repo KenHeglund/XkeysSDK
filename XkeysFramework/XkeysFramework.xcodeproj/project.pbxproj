@@ -505,7 +505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OUTPUT_LOCATION=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/Base.lproj\"\n\n# Create the folder for the localizable strings file if necessary\nif [ ! -d \"$OUTPUT_LOCATION\" ]; then\n    mkdir \"$OUTPUT_LOCATION\"\nfi\n\n# Generate the new strings file\ngenstrings -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysUnits/Xkeys124TbarUnit.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysUnits/Xkeys24Unit.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysUnits/XkeysHD15Unit.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysOutput/XkeysLEDOutput.m\"\ngenstrings -a -q -o \"$OUTPUT_LOCATION\" \"$SRCROOT/Source/XkeysInput/XkeysButton.m\"\n";
+			shellScript = "OUTPUT_LOCATION=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/Base.lproj\"\n\n# Create the folder for the localizable strings file if necessary\nif [ ! -d \"$OUTPUT_LOCATION\" ]; then\n    mkdir \"$OUTPUT_LOCATION\"\nfi\n\n# Generate the new strings file\ngenstrings -q -o \"$OUTPUT_LOCATION\" \"${SRCROOT}/Source/XkeysUnits/Xkeys124TbarUnit.m\" \"${SRCROOT}/Source/XkeysUnits/Xkeys24Unit.m\"  \"${SRCROOT}/Source/XkeysOutput/XkeysLEDOutput.m\" \"${SRCROOT}/Source/XkeysInput/XkeysBasicButton.m\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
