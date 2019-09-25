@@ -539,7 +539,7 @@ const CGFloat XkeysDeviceViewOutlineThickness = 2.0;
         
         // Background
         
-        NSColor *backgroundColor = [NSColor windowBackgroundColor];
+        NSColor *backgroundColor = [NSColor colorWithCalibratedWhite:0.90 alpha:1.0];
         
         if ( [deviceState isButtonPressed:buttonNumber] ) {
             backgroundColor = [NSColor colorWithCalibratedWhite:0.75 alpha:1.0];
