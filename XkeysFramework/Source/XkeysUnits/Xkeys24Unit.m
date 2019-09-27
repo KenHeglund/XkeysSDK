@@ -95,7 +95,12 @@ static const uint8_t XK24_BUFFER_LENGTH = XK24_OUTPUT_COMMAND_LENGTH;
     _buttons = [self buildButtonInputs];
     _leds = [@[_greenLED, _redLED] arrayByAddingObjectsFromArray:_backlights];
     
-    XkeysBasicButton *programSwitch = [[XkeysBasicButton alloc] initWithDevice:self cookie:6 controlIndex:32];
+    IOHIDElementCookie programSwitchCookie = 6;
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        programSwitchCookie += 2;
+    }
+    
+    XkeysBasicButton *programSwitch = [[XkeysBasicButton alloc] initWithDevice:self cookie:programSwitchCookie controlIndex:32];
     programSwitch.buttonName = NSLocalizedString(@"Program Switch", @"Name of the XK-24 Program Switch");
     _programSwitch = programSwitch;
     
@@ -375,7 +380,10 @@ static const uint8_t XK24_BUFFER_LENGTH = XK24_OUTPUT_COMMAND_LENGTH;
     const NSInteger buttonNumbersPerColumn = 8;
     
     // The state of the buttons are reported in a series of HID elements, each element containing the state one column of buttons.
-    const IOHIDElementCookie elementCookieOfFirstColumn = 7;
+    IOHIDElementCookie elementCookieOfFirstColumn = 7;
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        elementCookieOfFirstColumn += 2;
+    }
     
     for ( NSInteger columnIndex = 0 ; columnIndex < numberOfButtonColumns ; columnIndex++ ) {
         

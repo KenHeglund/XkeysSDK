@@ -158,14 +158,21 @@ void XkeysUnitRemovalCallback(void *context, IOReturn result, void *sender);
 
 - (void)registerInputValueCallbackCriteria {
     
+    /*
+     This +1 offset is a workaround for what appears to be a macOS bug in handling Xkeys devices.  When requesting callbacks for a given cookie, callbacks for cookie-1 are actually registered.  Therefore, the device's valid cookies are all increased by one for purposes of registering for value change callbacks.  When the callback is eventually called, the associated element contains the cookie value that the device expects.
+     
+     This workaround does not appear to be necessary on macOS 10.15 and newer.
+     */
+    NSInteger cookieOffset = 1;
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        cookieOffset = 0;
+    }
+    
     NSMutableSet *cookiesToRegister = [NSMutableSet set];
     
     for ( XkeysInput *controlInput in self.controlInputs ) {
         
-        /*
-         This +1 offset is a workaround for what appears to be a macOS bug in handling Xkeys devices.  When requesting callbacks for a given cookie,  callbacks for cookie-1 are actually registered.  Therefore, the device's valid cookies are all increased by one for purposes of registering for value change callbacks.  When the callback is eventually called, the associated element contains the cookie value that the device expects.
-         */
-        NSNumber *adjustedCookie = @((NSInteger)controlInput.cookie + 1);
+        NSNumber *adjustedCookie = @((NSInteger)controlInput.cookie + cookieOffset);
         
         [cookiesToRegister addObject:adjustedCookie];
     }

@@ -294,20 +294,30 @@
     
     // Test individual buttons
     
-    for ( IOHIDElementCookie cookie = 7 ; cookie <= 22 ; cookie++ ) {
+    IOHIDElementCookie firstCookie = 7;
+    IOHIDElementCookie lastCookie = 22;
+    IOHIDElementCookie tbarColumnCookie = 20;
+    
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >=  15 ) {
+        firstCookie += 2;
+        lastCookie += 2;
+        tbarColumnCookie += 2;
+    }
+    
+    for ( IOHIDElementCookie cookie = firstCookie ; cookie <= lastCookie ; cookie++ ) {
         
         MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:cookie];
         
         for ( NSInteger index = 0 ; index <= 7 ; index++ ) {
             
-            if ( cookie == 20 && index > 3 ) {
+            if ( cookie == tbarColumnCookie && index > 3 ) {
                 // These buttons are replaced by the t-bar control
                 continue;
             }
             
             uint32_t mask = (1 << index);
             
-            NSInteger expectedButtonNumber = (cookie - 7) * 8 + index ;
+            NSInteger expectedButtonNumber = (cookie - firstCookie) * 8 + index ;
             NSString *expectedIdentifier = [NSString stringWithFormat:@"xkeys://1/1523/1278/0/button:%ld", expectedButtonNumber];
             NSString *message = [NSString stringWithFormat:@"cookie: %ld index: %ld", (NSInteger)cookie, index];
             
@@ -343,7 +353,13 @@
     
     // Test t-bar
     
-    MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:33];
+    IOHIDElementCookie tbarCookie = 33;
+    
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        tbarCookie += 2;
+    }
+    
+    MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:tbarCookie];
     
     [mockDevice postInputValue:[[MockHIDValue alloc] initWithElement:element value:123]];
     

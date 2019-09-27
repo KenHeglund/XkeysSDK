@@ -143,7 +143,13 @@
     
     // Test
     
-    MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:33];
+    IOHIDElementCookie tbarCookie = 33;
+    
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        tbarCookie += 2;
+    }
+    
+    MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:tbarCookie];
     
     const NSInteger eventValue = 123;
     MockHIDValue *value = [[MockHIDValue alloc] initWithElement:element value:eventValue];

@@ -88,8 +88,13 @@ static const uint8_t XKE124_BUFFER_LENGTH = XKE124_INPUT_REPORT_LENGTH;
     _backlights = [self buildBacklights];
     _buttons = [self buildButtonInputs];
     
+    IOHIDElementCookie tbarCookie = 33;
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        tbarCookie += 2;
+    }
+    
     NSString *tbarName = NSLocalizedString(@"T-bar", @"User-visible name of the t-bar control on the XKE-124");
-    _tbar = [[XkeysSliderInput alloc] initWithDevice:self cookie:33 name:tbarName controlIndex:0];
+    _tbar = [[XkeysSliderInput alloc] initWithDevice:self cookie:tbarCookie name:tbarName controlIndex:0];
     _allControls = [(NSArray<XkeysInput *> *)_buttons arrayByAddingObject:_tbar];
     
     _leds = [@[_greenLED, _redLED] arrayByAddingObjectsFromArray:_backlights];
@@ -371,7 +376,10 @@ static const uint8_t XKE124_BUFFER_LENGTH = XKE124_INPUT_REPORT_LENGTH;
     const NSInteger numberOfButtonColumns = 16;
     
     // The state of the buttons are reported in a series of HID elements, each element containing the state one column of buttons.
-    const IOHIDElementCookie elementCookieOfFirstColumn = 7;
+    IOHIDElementCookie elementCookieOfFirstColumn = 7;
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        elementCookieOfFirstColumn += 2;
+    }
     
     for ( NSInteger columnIndex = 0 ; columnIndex < numberOfButtonColumns ; columnIndex++ ) {
         

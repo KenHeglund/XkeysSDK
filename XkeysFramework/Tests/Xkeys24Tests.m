@@ -282,7 +282,15 @@
     
     // Test individual buttons
     
-    for ( IOHIDElementCookie cookie = 7 ; cookie <= 10 ; cookie++ ) {
+    IOHIDElementCookie firstCookie = 7;
+    IOHIDElementCookie lastCookie = 10;
+    
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        firstCookie += 2;
+        lastCookie += 2;
+    }
+    
+    for ( IOHIDElementCookie cookie = firstCookie ; cookie <= lastCookie ; cookie++ ) {
         
         MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:cookie];
         
@@ -290,7 +298,7 @@
             
             uint32_t mask = (1 << index);
             
-            NSInteger expectedButtonNumber = (cookie - 7) * 8 + index ;
+            NSInteger expectedButtonNumber = (cookie - firstCookie) * 8 + index ;
             NSString *expectedIdentifier = [NSString stringWithFormat:@"xkeys://1/1523/1029/0/button:%ld", expectedButtonNumber];
             NSString *message = [NSString stringWithFormat:@"cookie: %ld index: %ld", (NSInteger)cookie, index];
             
@@ -326,7 +334,13 @@
     
     // Test program switch
     
-    MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:6];
+    IOHIDElementCookie programSwitchCookie = 6;
+    
+    if ( [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion >= 15 ) {
+        programSwitchCookie += 2;
+    }
+    
+    MockHIDElement *element = [[MockHIDElement alloc] initWithCookie:programSwitchCookie];
     
     [mockDevice postInputValue:[[MockHIDValue alloc] initWithElement:element value:1]];
     
